@@ -15,9 +15,11 @@ public class CategoryTest extends Pages {
         topMenuPage.proceedToClothes();
         assertThat(topMenuPage.title()).contains("CLOTHES");
 
-//        public static void assertEquals(productsGridPage.quantityOfProducts)
-//                Object 2,
-//                Object actual);
+//        String quantityOfProducts = productsGridPage.quantityOfProducts();
+//        if (quantityOfProduct==2) {
+//        System.out.println("Products quantity is correct");
+//       }else Sysem.out.println("Products quantity is incorrect");
+
 
 
         topMenuPage.proceedToAccessories();
