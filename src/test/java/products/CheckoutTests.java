@@ -44,18 +44,15 @@ public class CheckoutTests extends Pages {
         assertThat(checkoutConfirmationPage.getOrderConfirmationMsg()).contains("YOUR ORDER IS CONFIRMED");
 
         String orderNumber = checkoutConfirmationPage.getOrderNumber();
-        System.out.println(orderNumber);
+        System.out.println("Order number is "+orderNumber);
         topMenuPage.goToMyAccount();
 
         myAccountPage.goToHistoryOfOrders();
+        assertThat(orderDetailsPage.setReferenceOrderNumber()).contains(orderNumber);
 
         // ***dla chętnych: weryfikacja danych kupionego produktu (nazwa, cena, ilosc, cena laczna)
 
         // pkt 5 do zmiennej zapisz wygenerowany numer zamowienia
-
-        // przejdz do 'Your account'
-        // przejdz do ORDER HISTORY AND DETAILS
-        // sprawdz czy na stronie z historia zamowien znajduje się numer zamowienia z pkt 5
 
         // otworz zamowienie o numerze z pkt 5
         // sprzeczy czy tekst "Order Reference JBCERFQZQ - placed on 06/11/2022" zawiera numer zamowienia z pkt5
