@@ -15,8 +15,8 @@ public class CategoryTest extends Pages {
         topMenuPage.proceedToClothes();
         assertThat(topMenuPage.title()).contains("CLOTHES");
 
-//        String quantityOfProducts = productsGridPage.quantityOfProducts();
-//        if (quantityOfProduct==2) {
+//        String quantityOfProducts = productsGridPage.totalProducts();
+//        if (totalProducts==2) {
 //        System.out.println("Products quantity is correct");
 //       }else System.out.println("Products quantity is incorrect");
 
