@@ -5,6 +5,8 @@ import helpers.RandomHelper;
 import models.SocialTitle;
 import org.testng.annotations.Test;
 import pages.checkout.PersonalInfoCheckoutPage;
+import pages.user.HistoryOfOrdersPage;
+import pages.user.OrderDetailsPage;
 import static org.assertj.core.api.Assertions.*;
 
 public class CheckoutTests extends Pages {
@@ -49,7 +51,7 @@ public class CheckoutTests extends Pages {
 
         myAccountPage.goToHistoryOfOrders();
         assertThat(orderDetailsPage.setReferenceOrderNumber()).contains(orderNumber);
-
+        orderDetailsPage.goToOrderDetails();
         // ***dla chętnych: weryfikacja danych kupionego produktu (nazwa, cena, ilosc, cena laczna)
 
         // pkt 5 do zmiennej zapisz wygenerowany numer zamowienia
