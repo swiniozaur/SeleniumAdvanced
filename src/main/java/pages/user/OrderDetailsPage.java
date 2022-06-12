@@ -16,4 +16,12 @@ public class OrderDetailsPage extends BasePage {
     public String setReferenceOrderNumber() {
         return referenceOrderNumber.getText();
     }
+
+    @FindBy(css = "#content > table > tbody > tr > td.text-sm-center.order-actions > a:nth-child(1)")
+    private WebElement orderDetails;
+
+    public OrderDetailsPage goToOrderDetails(){
+        click(orderDetails);
+        return this;
+    }
 }
