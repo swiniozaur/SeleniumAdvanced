@@ -18,7 +18,7 @@ public class CategoryTest extends Pages {
 //        String quantityOfProducts = productsGridPage.quantityOfProducts();
 //        if (quantityOfProduct==2) {
 //        System.out.println("Products quantity is correct");
-//       }else Sysem.out.println("Products quantity is incorrect");
+//       }else System.out.println("Products quantity is incorrect");
 
 
 
