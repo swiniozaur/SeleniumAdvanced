@@ -44,7 +44,7 @@ public class CheckoutTests extends Pages {
         assertThat(checkoutConfirmationPage.getOrderConfirmationMsg()).contains("YOUR ORDER IS CONFIRMED");
 
         String orderNumber = checkoutConfirmationPage.getOrderNumber();
-
+        System.out.println(orderNumber);
         topMenuPage.goToMyAccount();
 
         myAccountPage.goToHistoryOfOrders();
